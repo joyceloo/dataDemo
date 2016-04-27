@@ -23,3 +23,18 @@ class DatademoItem(scrapy.Item):
     content=scrapy.Field()
 
     pass
+
+class JDItem(scrapy.Item):
+    JD_sid=scrapy.Field()
+    JD_surl=scrapy.Field()
+    JD_sname=scrapy.Field()
+    pass
+class DPItem(scrapy.Item):
+    dp_u=scrapy.Field()
+    dp_content=scrapy.Field()
+    dp_time=scrapy.Field()
+    dp_usenum=scrapy.Field()
+    dp_huifu=scrapy.Field()
+    dp_scene=scrapy.Field()
+    dp_link=scrapy.Field()
+

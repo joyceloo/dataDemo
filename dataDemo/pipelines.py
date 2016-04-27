@@ -20,14 +20,14 @@ class DatademoPipeline(object):
 	# 	self.file.write('\n')
 	# 	return item
 	def process_item(self, item, spider):
-		if not os.path.exists("shandong"):
-			os.mkdir("shandong")
-		s_file=open("shandong"+"/"+item['s_name']+".txt",'a')
-		s_file.write("uid:"+item['uid'].encode('utf-8'))
-		s_file.write("nickname"+item['nickname'].encode('utf-8'))
-		s_file.write("content:"+item['content'].encode('utf-8'))
-		s_file.write("comment_count:"+item['co_count'].encode('utf-8'))
-		s_file.write("recomment_count:"+item['re_count'].encode('utf-8'))
-		s_file.write('\n')
-		s_file.write('\n')
+		# if not os.path.exists("shandong"):
+		# 	os.mkdir("shandong")
+		# s_file=open("shandong"+"/"+item['s_name']+".txt",'a')
+		# s_file.write("uid:"+item['uid'].encode('utf-8'))
+		# s_file.write("nickname"+item['nickname'].encode('utf-8'))
+		# s_file.write("content:"+item['content'].encode('utf-8'))
+		# s_file.write("comment_count:"+item['co_count'].encode('utf-8'))
+		# s_file.write("recomment_count:"+item['re_count'].encode('utf-8'))
+		# s_file.write('\n')
+		# s_file.write('\n')
 		return item
